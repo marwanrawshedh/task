@@ -1,11 +1,11 @@
 import React from 'react';
-import classes from './card.module.css';
+import  './card.css';
 // import'./hi.css'
 
 function Card(props) {
   
     return (
-        <div className={props.type==="mand"?classes.mand:classes.add}>
+        <div style={{borderColor: `${props.color}`}} className={`${props.type}`}>
           {props.children}
         </div>
     );

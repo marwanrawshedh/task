@@ -1,14 +1,22 @@
-import React from 'react';
+import React ,{useContext}from 'react';
 import MandatoryCard from './ui/MandatoryCard';
 import Card from './ui/Card'
-import classes from './ui/card.module.css'
-const arr = [{ name: "js", des: "js course", duration: "1day", hours: "40hours" }, { name: "sql", des: "js course", duration: "3day", hours: "18hours" }, { name: "css", des: "css course", duration: "5day", hours: "48hours" }]
+import classes from './cardsWrapper.module.css'
+import { dataContext } from '../context/Context'
+
 function MandatoryCourses(props) {
 
+    const ctx = useContext(dataContext)
+     console.log(ctx);
     return (
         <section className={classes.mandWrapper}>
-            {arr.map((element) => {
-                return (<Card type="mand"><MandatoryCard element={element}/></Card>)
+            {ctx.mand.map((element,index) => {
+                return (
+
+                <Card color={ctx.status.mand.color} key={index} type="mand">
+                    <MandatoryCard element={element}/>
+                </Card>)
+
             })}
 
 

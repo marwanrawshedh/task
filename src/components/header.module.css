@@ -1,0 +1,36 @@
+.header{
+    display: flex; 
+    justify-content: space-between;
+    margin: 83px 80px 120px 80px ;
+    
+}
+.epic{
+    display: flex;
+    flex-direction: row;
+}
+
+.epixText{
+    font-weight:bolder;
+    color: #33358B;
+    padding-top: 29px;
+margin-left: 25px;
+
+
+
+}
+.epixText h1{
+    font-weight:bolder;
+    font-size: 33px;
+line-height: 35px;
+    
+
+}
+.rightText{
+    font-weight:bolder;
+    color: #33358B;
+padding-top: 31px;
+
+font-size: 42px;
+line-height: 51px;
+
+}
