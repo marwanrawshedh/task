@@ -1,0 +1,8 @@
+body{font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;color: #003459;
+}
+*{margin: 0;}
+
+p{font-size: 23px;
+    line-height: 27px;}    

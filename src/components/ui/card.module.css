@@ -1,0 +1,13 @@
+.mand{border: 4px solid #02C39A;border-radius: 40px;background: #FFFFFF;
+    width: 80%;
+margin: 0px 33px;padding: 30px;}
+
+.add{background: #FFFFFF;
+    border: 4px solid #0094FF;
+    box-sizing: border-box;
+    border-radius: 40px;width: 25%;padding: 30px;}
+
+
+.mandWrapper{display: flex;flex-direction: column;   align-items: center;width: 45%;margin: auto;}
+.additionalWrapper{display: flex; justify-content: space-around;flex-wrap: wrap;
+}
