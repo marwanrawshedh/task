@@ -1,4 +1,5 @@
 import React from "react";
+import Course from "./components/Course";
 import MandatoryCourses from "./components/MandatoryCourses";
 import AdditionalCourses from "./components/AdditionalCourses";
 import Header from './components/Header'
@@ -13,6 +14,7 @@ function App() {
 
     <Header/>
     <Context>
+      <Course/>
      <MandatoryCourses/>
      <AdditionalCourses/>
      <Info/>

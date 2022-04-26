@@ -13,11 +13,11 @@ function AdditionalCard(props) {
                 <div className={classes.lowerSec}>
 
 
+                <p>{props.element.des}</p>
                     <h4>{props.element.hours}</h4>
                     
 
                 </div>
-                <p>{props.element.des}</p>
 
             </div>
         </>
