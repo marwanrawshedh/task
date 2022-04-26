@@ -7,20 +7,22 @@ function Context(props) {
     const arr = {
         course: { name: "NodeJs", duration: "24 Days", hours: "163 Hours", img: "node" },
         mand: [
-            { name: "JavaScript", code: "js 101", des: "The Modern Javascript Bootcamp", duration: "1 Day", hours: "40 Hours", img: "js" },
-        { name: "sql", code: "sql 101", des: "Learning SQL", duration: "3 Day", hours: "18 Hours", img: "sql" },
-        { name: "node", des: "The complete Node.js Developer Course (3rd Edition)", duration: "5 Day", code: "js 201", hours: "48 Hours", img: "node" },
-        { name: "graphQl", des: "Practical GraphQL: Become a GraphQL Ninja", duration: "3 Day", code: "js 301", hours: "12 Hours", img: "graphQl" }
+            
+            { name: "JavaScript", code: "JS 101", des: "The Modern Javascript Bootcamp", duration: "8 Day", hours: "50 Hours", img: "js" },
+        { name: "SQL", code: "sql 101", des: "Learning SQL", duration: "1 Day", hours: "8 Hours", img: "sql" },
+        { name: "Node", des: "The complete Node.js Developer Course (3rd Edition)", duration: "10 Day", code: "JS 201", hours: "64 Hours", img: "node" },
+        { name: "graphQl", des: "Practical GraphQL: Become a GraphQL Ninja", duration: "6 Day", code: "JS 301", hours: "40 Hours", img: "graphQl" }
         ],
         add: [
-            { name: "jira", des: "Online Session", hours: "15 Hours", img: "jira" },
-            { name: "agile", des: "Online Session", hours: "25 Hours", img: "agile" }, 
-            { name: "git", des: "Online Session", hours: "48 Hours", img: "git" }],
+            { name: "JIRA", des: "Online Session", hours: "4 Hours", img: "jira" },
+            { name: "git", des: "Online Session", hours: "4 Hours", img: "git" },
+            { name: "Agile", des: "Online Session", hours: "4 Hours", img: "agile" } 
+        ],
 
         status: {
-             mand: {type:"mand" ,text: "Mandatory", color: "#02C39A" }, 
-             add: {type:"add", text: "Additional courses", color: "#0094FF" }, 
-             optional: {type:"optional", text: "Optional", color: "#FF8364" } 
+             mand: {type:"mand" ,text: "Mandatory" }, 
+             optional: {type:"optional", text: "Optional" } ,
+             add: {type:"add", text: "Additional courses" }
             }
     }
 

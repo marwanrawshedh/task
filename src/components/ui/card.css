@@ -1,6 +1,6 @@
 .course{
-
-     background: #FFFFFF;
+    border-color: #33358B !important;
+    background: #FFFFFF;
     border: 4px solid ;
     border-radius: 40px;
     margin: 0px 33px;
@@ -12,16 +12,20 @@
     
 }
 .mand{
+    
+    border-color: #02C39A !important;
     background: #FFFFFF;
     border: 4px solid ;
     border-radius: 40px;
     margin: 0px 33px;
     padding: 30px;
     width: 539px;;
+    height: 244px;
     box-sizing: border-box;
 }
 
 .add{
+    border-color:#0094FF !important;
     margin-top: 47px;
     background: #FFFFFF;
     border: 4px solid;
@@ -33,6 +37,7 @@
 
 }
 .optional{
+    border-color:#FF8364 !important ;
     background: #FFFFFF;
     border: 4px solid ;
     box-sizing: border-box;

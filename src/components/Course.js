@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import Card from './ui/Card';
 import { dataContext } from '../context/Context'
-import DownArrow from './ui/DownArrow';
 import classes from './cardsWrapper.module.css'
 import courseCss from './course.module.css'
 

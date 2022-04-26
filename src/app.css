@@ -1,9 +1,14 @@
-body{
+html{
+    background-size: cover;
+   
     background-position: 50% 100%;
     background-image: url('./img/background.png');
-    font-family: 'Roboto';
+    background-repeat: no-repeat;
+}
+body{
+    font-family: 'Roboto' !important;
     font-style: normal;
-    ;color: #003459;
+    color: #003459;
     font-family: 'Josefin Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
 }
@@ -14,7 +19,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
 p{
-  
+  width: 348px;
     font-size: 23px; 
      line-height: 27px; 
      font-weight: 700;
@@ -26,7 +31,8 @@ p{
 .rightArrow{
     align-items: center;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin: 48px 0;
    
     
 }
@@ -45,3 +51,13 @@ line-height: 34px;
     margin: auto;
 }
 .line svg{margin-top: 17px;} 
+
+@media (max-width:1400px){
+    .rightArrow svg{
+        
+        transform: rotate(90deg);
+       
+        
+    }
+
+}

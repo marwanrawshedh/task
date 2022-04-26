@@ -21,7 +21,7 @@ function AdditionalCourses(props) {
         <section className={classes.additionalWrapper}>
             {ctx.add.map((element, index) => {
                 return (
-                <Card key={index} color={ctx.status.add.color}  type="add">
+                <Card key={index}   type="add">
                     <AdditionalCard element={element} />
                 </Card>
                 )

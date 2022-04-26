@@ -9,47 +9,48 @@ import { dataContext } from '../context/Context'
 function MandatoryCourses(props) {
 
     const ctx = useContext(dataContext)
- 
+
     let arr = {}
-    
+
     for (let i = 0; i < ctx.mand.length; i++) {
 
         if (arr[ctx.mand[i]?.code?.split(" ")[1]]) {
             arr[ctx.mand[i]?.code?.split(" ")[1]].push(ctx.mand[i])
         } else {
 
-             arr[ctx.mand[i]?.code?.split(" ")[1]]=[ctx.mand[i]]
+            arr[ctx.mand[i]?.code?.split(" ")[1]] = [ctx.mand[i]]
         }
     }
-    arr =Object.values(arr) ;
+    arr = Object.values(arr);
 
 
     return (
         <section className={classes.mandWrapper}>
-            {arr.map((ele,ind)=>{
-              
-                return(<div key={ind}>
-                    <div className="downArrow">
-                
-                <DownArrow />
-                </div>
-                <div className={classes.sameCode}>
-                {ele.map((element, index) => {
-                    return (<>
-                    <div className='rightArrow'>
+            {arr.map((ele, ind) => {
 
-                            <RightArrow/>
+                return (<div key={ind}>
+                    <div className="downArrow">
+
+                        <DownArrow />
                     </div>
-                        <Card color={ctx.status.mand.color} key={index} type="mand">
-                            <MandatoryCard element={element} />
-                        </Card>
-                    </>
-                        )
-                        
-                    })}
+                    <div className={classes.sameCode}>
+                        {ele.map((element, index) => {
+                            return (<>
+                                <div className='rightArrow'>
+
+                                    <RightArrow />
+                                </div>
+                                <Card key={index} type="mand">
+                                    <MandatoryCard element={element} />
+                                </Card>
+                            </>
+                            )
+
+                        })}
                     </div>
-                    </div>
-            )})}
+                </div>
+                )
+            })}
 
 
         </section>
