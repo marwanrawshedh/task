@@ -4,6 +4,8 @@ import { createContext } from 'react';
 export const dataContext = createContext({});
 
 function Context(props) {
+
+    
     const arr = {
         course: { name: "NodeJs", duration: "24 Days", hours: "163 Hours", img: "node" },
         mand: [
@@ -25,7 +27,6 @@ function Context(props) {
              add: {type:"add", text: "Additional courses" }
             }
     }
-
     return (
         <dataContext.Provider value={arr} >
             {props.children}

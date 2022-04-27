@@ -10,17 +10,25 @@ function MandatoryCourses(props) {
 
     const ctx = useContext(dataContext)
 
-    let arr = {}
+    let arr = ctx.mand.reduce((prev, current) => {
+        let code = current.code?.split(" ")[1]
+        
+        prev[code] = prev[code] ? [...prev[code], current] : [current]
+        return (prev)
+    }, {});
+    
 
-    for (let i = 0; i < ctx.mand.length; i++) {
+    // for (let i = 0; i < ctx.mand.length; i++) {
+    // let code = current.code?.split(" ")[1]
+    //     if (arr[code]) {
+    //         arr[code].push(ctx.mand[i])
+    //     } else {
 
-        if (arr[ctx.mand[i]?.code?.split(" ")[1]]) {
-            arr[ctx.mand[i]?.code?.split(" ")[1]].push(ctx.mand[i])
-        } else {
+    //         arr[code] = [ctx.mand[i]]
+    //     }
+    // }
 
-            arr[ctx.mand[i]?.code?.split(" ")[1]] = [ctx.mand[i]]
-        }
-    }
+
     arr = Object.values(arr);
 
 
@@ -33,7 +41,8 @@ function MandatoryCourses(props) {
 
                         <DownArrow />
                     </div>
-                    <div className={classes.sameCode}>
+
+                    <div className={ele.length > 1 ? classes.sameCodejust : classes.sameCode}>
                         {ele.map((element, index) => {
                             return (<>
                                 <div className='rightArrow'>

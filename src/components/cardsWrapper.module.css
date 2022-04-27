@@ -35,9 +35,9 @@
 .sameCode{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    
 }
 .sameCode >div:first-child{
     position: absolute;
@@ -45,11 +45,26 @@
 
    
 }
-@media (max-width:1400px){
-    .sameCode{
+.sameCodejust{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sameCodejust >div:first-child{
+    position: absolute;
+    visibility: hidden;
+
+   
+}
+@media (max-width:1250px){
+    .sameCodejust{
+        overflow-x: scroll;
+        width: 539px;
+        flex-wrap:nowrap;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
         align-items: center;
     }
+    
 }

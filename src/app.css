@@ -1,7 +1,6 @@
 html{
     background-size: cover;
-   
-    background-position: 50% 100%;
+    background-position: 50% 50%;
     background-image: url('./img/background.png');
     background-repeat: no-repeat;
 }
@@ -26,7 +25,7 @@ p{
 }   
 .downArrow{
     text-align: center;
-    margin:29px 0 29px ;
+    margin:0 0 29px ;
 } 
 .rightArrow{
     align-items: center;
@@ -52,12 +51,4 @@ line-height: 34px;
 }
 .line svg{margin-top: 17px;} 
 
-@media (max-width:1400px){
-    .rightArrow svg{
-        
-        transform: rotate(90deg);
-       
-        
-    }
 
-}

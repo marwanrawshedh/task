@@ -7,7 +7,7 @@ import { dataContext } from '../context/Context'
 function Info(props) {
     const { status } = useContext(dataContext)
     const data = Object.values(status);
-    console.log(data);
+    
     return (
         <div className={classes.infoWrapper}>
             {data.map((element, index) => {
