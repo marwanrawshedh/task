@@ -14,7 +14,7 @@ function Info(props) {
                 
                 return (
 
-                    <Card key={index} color={element.type} type={"data"} >
+                    <Card key={index} color={element.text} type={"data"} >
 
                         <h1>{element.text}</h1>
                     </Card>

@@ -1,10 +1,13 @@
 html{
+
+ 
+}
+body{
+    
     background-size: cover;
     background-position: 50% 50%;
     background-image: url('./img/background.png');
     background-repeat: no-repeat;
-}
-body{
     font-family: 'Roboto' !important;
     font-style: normal;
     color: #003459;

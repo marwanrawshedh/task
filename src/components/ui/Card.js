@@ -1,11 +1,22 @@
 import React from 'react';
 import  './card.css';
-// import'./hi.css'
 
 function Card(props) {
-  const color=props.color==="mand"?"#02C39A":props.color==="add"?"#0094FF":"#FF8364"
+  const color=(type)=>{
+    
+    const obj={
+      Mandatory:"#02C39A",
+      Optional:"#FF8364",
+      Additional:"#0094FF"
+
+    }
+
+    return obj[type?.split(" ")[0]]
+  }
+  
+  
     return (
-        <div style={{borderColor: color}} className={`${props.type}`}>
+        <div style={{borderColor: color(props.color)}} className={`${props.type}`}>
           {props.children}
         </div>
     );

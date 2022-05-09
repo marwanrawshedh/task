@@ -44,15 +44,15 @@ function MandatoryCourses(props) {
 
                     <div className={ele.length > 1 ? classes.sameCodejust : classes.sameCode}>
                         {ele.map((element, index) => {
-                            return (<>
-                                <div className='rightArrow'>
+                            return (<div className={classes.one}>
+                                <section className='rightArrow'>
 
                                     <RightArrow />
-                                </div>
-                                <Card key={index} type="mand">
+                                </section>
+                                <Card  color="Mandatory" key={index} type="mand">
                                     <MandatoryCard element={element} />
                                 </Card>
-                            </>
+                            </div>
                             )
 
                         })}

@@ -13,7 +13,7 @@
 }
 .mand{
     
-    border-color: #02C39A !important;
+    border-color: #02C39A ;
     background: #FFFFFF;
     border: 4px solid ;
     border-radius: 40px;
@@ -25,7 +25,7 @@
 }
 
 .add{
-    border-color:#0094FF !important;
+    border-color:#0094FF ;
     margin-top: 47px;
     background: #FFFFFF;
     border: 4px solid;
@@ -37,7 +37,7 @@
 
 }
 .optional{
-    border-color:#FF8364 !important ;
+    border-color:#FF8364  ;
     background: #FFFFFF;
     border: 4px solid ;
     box-sizing: border-box;
