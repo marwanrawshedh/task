@@ -6,6 +6,7 @@ import courseCss from "./course.module.css";
 
 function Course(props) {
   const { course } = useContext(dataContext);
+  console.log("wow2");
   return (
     <div className={classes.courseWrapper}>
       <Card color="#33358B" type="course">
