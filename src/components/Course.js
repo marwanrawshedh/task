@@ -5,7 +5,6 @@ import classes from "./cardsWrapper.module.css";
 import courseCss from "./course.module.css";
 
 function Course(props) {
-  console.log(hi);
   const { course } = useContext(dataContext);
   return (
     <div className={classes.courseWrapper}>
